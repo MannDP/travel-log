@@ -5,17 +5,17 @@ This is a full-stack application to store all the places you have travelled to.
 
 TODO:
 - [ ] Setup server
-  - [ ] Install dependencies
+  - [x] Install dependencies
   - [ ] Install / Setup linter
-  - [ ] Setup Express App
-  - [ ] Setup Not Found and Error Middlewares
-- [ ] Model DB
-  - [ ] What will the data look like?
-- [ ] Setup Mongoose models
-- [ ] Post /logs
-  - [ ] Create a new log entry
-- [ ] GET /logs
-  - [ ] List all log entries
+  - [x] Setup Express App
+  - [x] Setup Not Found and Error Middlewares
+- [x] Model DB
+  - [x] What will the data look like?
+- [x] Setup Mongoose models
+- [x] Post /logs
+  - [x] Create a new log entry
+- [x] GET /logs
+  - [x] List all log entries
 - [ ] Setup client
 - [ ] Create form to add new entry
 - [ ] Setup Map SDK on client
