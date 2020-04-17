@@ -2,15 +2,15 @@ const express = require("express");
 const morgan = require("morgan");
 const cors = require("cors");
 const helmet = require("helmet");
-const middlewares = require('./middlewares.js');
-const mongoose = require('mongoose');
-const logs = require('./api/logs.js');
-require('dotenv').config();
+const middlewares = require("./middlewares.js");
+const mongoose = require("mongoose");
+const logs = require("./api/logs.js");
+require("dotenv").config();
 
 const app = express();
 mongoose.connect(process.env.DB_URL, {
-  useNewUrlParser: true, 
-  useUnifiedTopology: true 
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 });
 
 app.use(helmet());
@@ -28,7 +28,7 @@ app.get("/", (req, res) =>
   })
 );
 
-app.use('/api/logs', logs);
+app.use("/api/logs", logs);
 
 app.use(middlewares.notFound);
 app.use(middlewares.errorHandler);
