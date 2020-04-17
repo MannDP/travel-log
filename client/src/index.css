@@ -8,7 +8,8 @@ body {
 
 .marker {
   stroke: red;
-  transform: translate(-50%, -100%)
+  transform: translate(-50%, -100%);
+  position: relative;
 }
 
 .marker.orange {
@@ -16,7 +17,13 @@ body {
 }
 
 .popup {
-  width: 40vw;
+  width: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.popup-content {
+  margin: 0 1rem;
 }
 
 .entry-form {
@@ -39,4 +46,14 @@ body {
 
 .error {
   color: red;
+}
+
+.location-pic {
+  width: auto;
+  height: 250px;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -82,10 +82,11 @@ const App = () => {
                 onClose={() => setShowPopup({})}
                 anchor="top" 
               >
-                <div>
+                <div className="popup-content">
                   <h3>{entry.title}</h3>
                   <p>{entry.comments}</p>
                   <small>Visited at: {new Date(entry.visitDate).toLocaleDateString()}</small>
+                  <img className="location-pic" src={entry.image} alt=""/>
                 </div>
               </Popup>
             ) : null
