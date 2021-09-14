@@ -18,5 +18,3 @@ TODO:
 - [x] Setup Map SDK on client
 - [x] Render all log entries on map
 - [ ] Setup linter
-
-This is partial a code-along to a YouTube tutorial from coding garden with CJ.
